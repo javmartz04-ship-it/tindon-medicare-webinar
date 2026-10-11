@@ -65,3 +65,10 @@ Javier, verbatim: *"this is way too long... I love the hero section... You can k
 - Host + reviews merged into one light section; reviews became a hairline strip of three short excerpts (cut, not reworded).
 - FAQ kept, now carries the last CTA. Footer is a light logo + disclaimer plate.
 - v1 kept locally as v1-archived.html / v1-src-archived.html.
+
+## v3 hero copy (2026-10-11)
+Javier supplied "Could You Be Paying More for Medicare in 2027 Without Realizing It?" + two supporting lines, but
+wanted the headline "more of a call out" blended with what we had. Shipped: "On Medicare in Maine or New Hampshire? /
+You could be paying more in 2027 / *without realizing it.*" Sub = his "find out what to check... before December 7"
+line (em dash → comma); second line = his "join local Medicare advisor Brianna Henward..." as a ruled aside.
+H1 down to 58px so the callout line fits one line at 1440 (it clipped the "?" at 64px). Page title uses his question.
