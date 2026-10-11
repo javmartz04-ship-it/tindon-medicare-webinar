@@ -53,3 +53,15 @@ Prefill `?full_name=&email=&phone=`. Remembers the registration only after a con
 - Playfair rendered "$0" as "$o" (old-style figures) → `font-variant-numeric:lining-nums` on body.
 - Hero copy column overflowed at 390 (grid `1fr` + max-content countdown) → `minmax(0,1fr)`.
 - Eyebrows cut from 9 to 4 (pre-flight max).
+
+## v2 (2026-10-11, same day): "way too long", "you just copied what we already had"
+Javier, verbatim: *"this is way too long... I love the hero section... You can keep the frequently asked questions. I would take out where it says check your 2027 plan before december... I want to keep what we're covered, but I don't want to show [the slides]... the webinar is not that long, right? This is b to c rather than b to b... let's just keep making this more premium."*
+
+- Hero kept exactly. Everything between hero and FAQ rebuilt: 11,000px → 3,900px at 1440.
+- Cut: 3-numbers strip, problem rows, reframe band, 6-step rail, agenda-with-slides, for/not-for, navy closing block.
+- New: one navy "Inside the webinar" band. Problem + reframe compressed into its H2 ("Same plan name. Different plan.")
+  and lede, with six topic teasers beside it. No slides, no answers: two teasers carry the real number blurred
+  with a "Revealed live" tag so the reason to show up is visible.
+- Host + reviews merged into one light section; reviews became a hairline strip of three short excerpts (cut, not reworded).
+- FAQ kept, now carries the last CTA. Footer is a light logo + disclaimer plate.
+- v1 kept locally as v1-archived.html / v1-src-archived.html.
