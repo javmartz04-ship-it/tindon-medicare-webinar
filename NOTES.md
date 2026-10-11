@@ -79,3 +79,15 @@ Tindon serves beyond the states on its website. Removed every state reference: H
 bio ends "families like yours", ME · NH fact → "Licensed / Health & life insurance", the Julee excerpt that said
 "Maine plans" swapped for her "thoughtful, expert advice on all things Medicare" line, and the state dropdown is gone
 from the form (name, email, phone only). The Wells, Maine office address stays (it's the real address).
+
+## Thank-you page (2026-10-11)
+`thanks.html` (source `thanks.src.html`, built by `build.py`). Same tokens and logo. Order: check seal → "Your seat is
+saved" → "You're in, <Name>. / *We'll see you there.*" (name from `?first_name=` or the opt-in's localStorage) →
+lede (link comes by text and email) → double-bezel navy event card (title, when, where, host) → "Before the webinar":
+Annual Notice of Change, prescriptions, doctors (from the deck's checklist) → office phone 207-248-8411 → footer.
+No CTA to sell; the phone link is the one deliberate exit. ~1,900px at 1440.
+`EVENT_START` empty = card says the date is coming and calendar buttons stay hidden. Set it (same value as the opt-in)
+and the card shows the date in ET, a countdown, Add To Calendar (.ics, verified: CRLF, 75-octet folding, 22:00Z for
+6 PM EDT, 30-min alarm) and Google Calendar. For iPhones, host an .ics and set `ICS_URL` once the date exists.
+Opt-in `THANKS` = 'thanks.html' and now appends `?first_name=` (first name only, never email/phone in the URL).
+Still preview-only until `WEBHOOK` is set. In GHL, swap THANKS for the GHL thank-you URL.

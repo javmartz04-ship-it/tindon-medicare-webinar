@@ -639,11 +639,11 @@ form .btn{width:100%;justify-content:space-between;margin-top:6px}
                 Empty = no date given yet: the countdown targets the close of Annual Enrollment (Dec 7)
                 and the copy never names a time.
    WEBHOOK:     GHL inbound webhook for THIS webinar. Empty = preview mode (shows success, sends nothing).
-   THANKS:      thank-you page to redirect to after a real submit. Empty = stay on the inline success state.
+   THANKS:      thank-you page to redirect to after a real submit (thanks.html here; swap for the GHL URL). Empty = stay on the inline success state.
    Add ?preview=1 to the URL to test the form without sending, even once WEBHOOK is set. */
 const EVENT_START = '';
 const WEBHOOK = '';
-const THANKS  = '';
+const THANKS  = 'thanks.html';
 const AEP_END = '2026-12-07T23:59:00-05:00';
 /* ================================= */
 const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -743,7 +743,7 @@ form.addEventListener('submit',async e=>{
       if(!r.ok) throw new Error(r.status);
     }
     try{ localStorage.setItem(KEY,JSON.stringify({first:data.first_name})); }catch(e){}
-    if(THANKS && !preview){ location.href = THANKS; return; }
+    if(THANKS && !preview){ location.href = THANKS + (THANKS.includes('?')?'&':'?') + 'first_name=' + encodeURIComponent(data.first_name); return; }
     done(data.first_name);
   }catch(err){
     errAll.textContent = "Something went wrong saving your seat. Please try again, or call us at 207-248-8411.";

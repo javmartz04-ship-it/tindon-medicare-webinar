@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>You're Registered | Medicare 2027 Webinar with Brianna Henward</title>
+<meta name="description" content="Your seat for the free Medicare 2027 webinar with Brianna Henward of Tindon Health & Wealth is saved.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<style>
+/* ===== tokens: same as the registration page ===== */
+:root{
+  --navy:#0B2950; --orange:#FF914D; --orange-text:#D9621A;
+  --paper:#FBFAF7; --mist:#F4F4F4;
+  --ink:#0B2950; --t2:#33445E; --t3:#56657B; --t4:#7A879A;
+  --line:rgba(11,41,80,.14); --line-2:rgba(11,41,80,.08);
+  --serif:'Playfair Display',Georgia,'Times New Roman',serif;
+  --sans:Inter,system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --ease:cubic-bezier(.22,1,.36,1);
+  --r:6px;
+  --lit-paper:radial-gradient(122% 78% at 50% -14%,#FFFFFF,#FDFCFA 40%,#F6F4EF);
+  --lit-navy:radial-gradient(104% 78% at 12% -10%,#1A3D6E,#0E2E59 32%,#0A2447 70%,#061A35);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:radial-gradient(130% 1100px at 50% -10%,#FFFFFF,#FDFCFA 40%,#F6F4EF 100%) no-repeat,#F6F4EF;color:var(--ink);font-family:var(--sans);font-variant-numeric:lining-nums;font-feature-settings:"lnum";font-size:19px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,svg{display:block}
+button{font:inherit;color:inherit;cursor:pointer;border:0;background:none}
+a{color:inherit}
+.wrap{width:min(1080px,100% - 48px);margin-inline:auto}
+h1,h2,h3{text-wrap:balance}
+.logo use{--ln:var(--navy);--lw:#fff;--lo:var(--orange)}
+.inv use{--ln:#fff;--lw:var(--navy);--lo:var(--orange)}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(18px);filter:blur(6px);transition:opacity .9s var(--ease),transform .9s var(--ease),filter .9s var(--ease)}
+.go .rv{opacity:1;transform:none;filter:none}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.26s}.d4{transition-delay:.36s}
+
+/* ===== confirmation ===== */
+.top{position:relative;padding:72px 0 56px;text-align:center;overflow:hidden}
+.top::before{content:"";position:absolute;left:50%;top:-120px;width:900px;height:520px;transform:translateX(-50%);pointer-events:none;
+  background:radial-gradient(closest-side,rgba(255,145,77,.12),transparent)}
+.seal{position:relative;width:76px;height:76px;margin:0 auto;border-radius:50%;background:var(--navy);display:grid;place-items:center;
+  box-shadow:0 0 0 10px rgba(255,145,77,.16),0 24px 40px -18px rgba(11,41,80,.6)}
+.seal svg{width:32px;height:32px;stroke:#fff;fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.seal svg path{stroke-dasharray:30;stroke-dashoffset:30;transition:stroke-dashoffset .8s var(--ease) .45s}
+.go .seal svg path{stroke-dashoffset:0}
+.k{display:inline-flex;align-items:center;gap:12px;margin-top:30px;font-size:12.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--t3)}
+.k::before,.k::after{content:"";width:22px;height:2px;background:var(--orange)}
+h1{font-family:var(--serif);font-weight:600;font-size:clamp(40px,5.4vw,68px);line-height:1.08;letter-spacing:-.6px;margin-top:18px}
+h1 .em{display:block;font-style:italic;color:var(--orange-text)}
+.lede{font-size:21px;color:var(--t2);max-width:620px;margin:22px auto 0;line-height:1.55}
+.lede b{color:var(--ink);font-weight:600}
+
+/* ===== event card: double bezel, navy core ===== */
+.card{position:relative;max-width:920px;margin:0 auto;padding:8px;border-radius:14px;background:linear-gradient(180deg,rgba(255,255,255,.95),rgba(255,255,255,.6));
+  border:1px solid var(--line);box-shadow:0 50px 90px -46px rgba(11,41,80,.6)}
+.card .core{display:grid;grid-template-columns:.95fr 1.05fr;border-radius:9px;overflow:hidden;background:var(--lit-navy);color:#fff;box-shadow:inset 0 1px 0 rgba(255,255,255,.12)}
+.cover{position:relative;padding:40px 36px;border-right:1px solid rgba(255,255,255,.12);display:flex;flex-direction:column;min-height:300px}
+.cover::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--orange)}
+.cover small{font-size:11.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.66)}
+.cover h2{font-family:var(--serif);font-weight:600;font-size:40px;line-height:1.08;margin-top:16px}
+.cover h2 i{color:var(--orange)}
+.cover .logo{width:170px;margin-top:auto;padding-top:34px}
+.details{padding:36px 36px 32px}
+.row{display:grid;grid-template-columns:28px 1fr;gap:14px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+.row:first-child{padding-top:0}
+.row svg{width:22px;height:22px;stroke:var(--orange);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;margin-top:3px}
+.row small{display:block;font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.58)}
+.row b{display:block;font-size:18.5px;font-weight:600;margin-top:2px;line-height:1.4}
+.cd{display:flex;gap:0;margin-top:22px;border:1px solid rgba(255,255,255,.18);border-radius:var(--r);overflow:hidden}
+.cd div{flex:1;text-align:center;padding:10px 6px}
+.cd div+div{border-left:1px solid rgba(255,255,255,.12)}
+.cd b{display:block;font-family:var(--serif);font-size:28px;font-weight:600;line-height:1.1;font-variant-numeric:lining-nums tabular-nums}
+.cd small{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.55);font-weight:600}
+.cal{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.btn{display:inline-flex;align-items:center;gap:14px;background:var(--orange);color:var(--navy);font-weight:700;font-size:18px;min-height:58px;padding:8px 10px 8px 24px;border-radius:var(--r);
+  box-shadow:0 14px 30px -14px rgba(255,145,77,.8),inset 0 1px 0 rgba(255,255,255,.45);text-decoration:none;transition:transform .3s var(--ease),background .3s var(--ease)}
+.btn .bi{width:40px;height:40px;border-radius:4px;background:var(--navy);color:#fff;display:grid;place-items:center}
+.btn .bi svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.btn:hover{transform:translateY(-2px);background:#FF9D60}
+.btn.ghost{background:transparent;color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.35);padding-right:24px}
+.btn.ghost:hover{background:rgba(255,255,255,.08)}
+.btn:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.pending{margin-top:22px;font-size:16px;color:rgba(255,255,255,.72);line-height:1.5}
+
+/* ===== before the webinar ===== */
+.prep{padding:96px 0 88px}
+.prep .grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px;align-items:start}
+.prep h2{font-family:var(--serif);font-weight:600;font-size:clamp(32px,3.6vw,44px);line-height:1.1;letter-spacing:-.4px}
+.prep .sub{color:var(--t2);margin-top:16px;max-width:380px}
+.steps{border-top:2px solid var(--navy)}
+.step{display:grid;grid-template-columns:64px 1fr;gap:12px;padding:26px 0;border-bottom:1px solid var(--line)}
+.step .n{font-family:var(--serif);font-size:22px;font-weight:600;color:var(--orange-text)}
+.step h3{font-family:var(--serif);font-size:24px;font-weight:600;line-height:1.25}
+.step p{color:var(--t2);margin-top:6px}
+.help{display:flex;align-items:center;gap:18px;margin-top:36px;padding:22px 24px;border-radius:var(--r);background:#fff;border:1px solid var(--line);box-shadow:0 24px 50px -36px rgba(11,41,80,.45)}
+.help .av{width:52px;height:52px;flex:none;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font-family:var(--serif);font-weight:600;font-size:19px}
+.help p{font-size:17px;color:var(--t2);line-height:1.5}
+.help a{color:var(--ink);font-weight:600;text-decoration-color:var(--orange);text-decoration-thickness:2px;text-underline-offset:4px;white-space:nowrap}
+
+/* ===== footer ===== */
+footer{border-top:1px solid var(--line);padding:44px 0 52px;background:#fff}
+footer .wrap{display:grid;grid-template-columns:200px 1fr;gap:56px;align-items:start}
+footer .logo{width:190px}
+footer p{font-size:12.5px;line-height:1.7;color:var(--t3)}
+footer p+p{margin-top:10px}
+footer p b{color:var(--ink);font-weight:600}
+
+@media (max-width:860px){
+  .card .core{grid-template-columns:1fr}
+  .cover{border-right:0;border-bottom:1px solid rgba(255,255,255,.12);min-height:0}
+  .prep .grid{grid-template-columns:1fr;gap:36px}
+}
+@media (max-width:620px){
+  body{font-size:18px}
+  .wrap{width:calc(100% - 32px)}
+  .top{padding:52px 0 44px}
+  .lede{font-size:19px}
+  .cover{padding:30px 24px}
+  .cover h2{font-size:32px}
+  .details{padding:28px 22px 26px}
+  .cal .btn{width:100%;justify-content:space-between}
+  .prep{padding:72px 0 64px}
+  .step{grid-template-columns:44px 1fr}
+  .step h3{font-size:21px}
+  .help{align-items:flex-start}
+  footer .wrap{grid-template-columns:1fr;gap:22px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .rv{opacity:1;transform:none;filter:none}
+  .seal svg path{stroke-dashoffset:0}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="lg">{{LOGO}}</g></defs></svg>
+
+<main>
+<section class="top">
+  <div class="wrap">
+    <div class="seal rv" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></div>
+    <span class="k rv d1">Your seat is saved</span>
+    <h1 class="rv d2">You're in<span data-name></span>. <span class="em">We'll see you there.</span></h1>
+    <p class="lede rv d3">Your webinar link is on its way <b>by text and email</b>. Keep an eye out for it, and we'll send a reminder before we go live.</p>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="card rv d4">
+    <div class="core">
+      <div class="cover">
+        <small>Free 20-minute webinar</small>
+        <h2>Medicare 2027<br><i>What's changing.</i></h2>
+        <svg class="logo inv" viewBox="0 0 1409 568" role="img" aria-label="Tindon Health &amp; Wealth"><use href="#lg"/></svg>
+      </div>
+      <div class="details">
+        <div class="row"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+          <div><small>When</small><b data-when>Date and time coming by text and email</b></div></div>
+        <div class="row"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          <div><small>Where</small><b>Online, from your phone or computer</b></div></div>
+        <div class="row"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>
+          <div><small>Host</small><b>Brianna Henward, Tindon Health &amp; Wealth</b></div></div>
+        <div data-dated hidden>
+          <div class="cd" aria-label="Time until the webinar starts"><div><b data-d>00</b><small>Days</small></div><div><b data-h>00</b><small>Hours</small></div><div><b data-m>00</b><small>Min</small></div></div>
+          <div class="cal">
+            <button class="btn" type="button" data-ics>Add To Calendar <span class="bi"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4M12 13v5M9.5 15.5h5"/></svg></span></button>
+            <a class="btn ghost" data-gcal target="_blank" rel="noopener">Google Calendar</a>
+          </div>
+        </div>
+        <p class="pending" data-undated>We'll text and email you the date, the time and your link. Nothing else to do right now.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="prep">
+  <div class="wrap grid">
+    <div>
+      <h2 class="rv">Before the webinar</h2>
+      <p class="sub rv d1">Three things to have handy. They make the webinar, and your own review afterward, much more useful.</p>
+    </div>
+    <div>
+      <div class="steps">
+        <div class="step rv"><span class="n">01</span><div><h3>Your Annual Notice of Change</h3><p>The letter from your plan that lists what's different next year. Can't find it? Just have your plan name.</p></div></div>
+        <div class="step rv d1"><span class="n">02</span><div><h3>Your prescription list</h3><p>Every medication you take, so you can check it against your plan's 2027 drug list.</p></div></div>
+        <div class="step rv d2"><span class="n">03</span><div><h3>Your list of doctors</h3><p>The doctors and hospitals you want to keep, so you know they're still in network.</p></div></div>
+      </div>
+      <div class="help rv d3">
+        <span class="av" aria-hidden="true">BH</span>
+        <p>Questions before the webinar? Call our office at <a href="tel:+12072488411">207-248-8411</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <svg class="logo" viewBox="0 0 1409 568" role="img" aria-label="Tindon Health &amp; Wealth"><use href="#lg"/></svg>
+    <div>
+      <p><b>Medicare disclosure.</b> This is not endorsed or affiliated with any federal Medicare program, nor any U.S. government agency. If applicable, we do not offer every plan available in your area and contacting us will direct you to a licensed insurance agent. Any information we provide is limited to those plans we do offer in your area. Please contact Medicare.gov or 1-800-MEDICARE to get information on all of your options.</p>
+      <p>&copy; 2026 Tindon Health &amp; Wealth &middot; 655 Post Rd, Wells, ME 04090</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ============ CONFIG ============
+   EVENT_START: same value as on the registration page, e.g. '2026-10-22T18:00:00-04:00'.
+                Empty = no date yet: the card says the date is coming and the calendar buttons stay hidden.
+   EVENT_MINUTES: length used for the calendar entry (the deck runs about 20 minutes plus Q&A).
+   ICS_URL: optional hosted .ics for iPhones (Safari opens it in Calendar). Empty = blob download everywhere. */
+const EVENT_START = '';
+const EVENT_MINUTES = 45;
+const ICS_URL = '';
+const CAL_TITLE = 'Medicare 2027 Webinar with Brianna Henward';
+const CAL_DETAILS = "Free webinar from Tindon Health & Wealth: what's changing in Medicare for 2027. Your link comes by text and email. Have your Annual Notice of Change, prescription list and doctors handy.";
+const CAL_LOCATION = 'Online (link by text and email)';
+/* ================================= */
+
+/* first name: ?first_name= from GHL, else the registration saved by the opt-in page */
+let first = new URLSearchParams(location.search).get('first_name') || '';
+if(!first){ try{ const s = JSON.parse(localStorage.getItem('tindon-mc27')||'null'); if(s && s.first) first = s.first; }catch(e){} }
+first = first.trim().split(/\s+/)[0].slice(0,24);
+if(first) document.querySelector('[data-name]').textContent = ', ' + first.charAt(0).toUpperCase() + first.slice(1);
+
+/* arrival */
+const go = ()=>document.body.classList.add('go');
+(document.fonts && document.fonts.ready ? Promise.race([document.fonts.ready,new Promise(r=>setTimeout(r,1200))]) : Promise.resolve())
+  .then(()=>requestAnimationFrame(()=>requestAnimationFrame(go)));
+
+/* event: only when a real date is set */
+const start = EVENT_START ? new Date(EVENT_START) : null;
+if(start && !isNaN(start) && start.getTime() + EVENT_MINUTES*60000 > Date.now()){
+  const f = o=>new Intl.DateTimeFormat('en-US',Object.assign({timeZone:'America/New_York'},o)).format(start);
+  document.querySelector('[data-when]').textContent = f({weekday:'long',month:'long',day:'numeric'}) + ' · ' + f({hour:'numeric',minute:'2-digit'}) + ' ET';
+  document.querySelector('[data-dated]').hidden = false;
+  document.querySelector('[data-undated]').hidden = true;
+  const pad = n=>String(n).padStart(2,'0');
+  const tick = ()=>{ const s = Math.max(0,Math.floor((start - Date.now())/1000));
+    document.querySelector('[data-d]').textContent = pad(Math.floor(s/86400));
+    document.querySelector('[data-h]').textContent = pad(Math.floor(s%86400/3600));
+    document.querySelector('[data-m]').textContent = pad(Math.floor(s%3600/60)); };
+  tick(); setInterval(tick,15000);
+
+  const end = new Date(start.getTime() + EVENT_MINUTES*60000);
+  const z = t=>t.toISOString().replace(/[-:]/g,'').replace(/\.\d{3}/,'');
+  const esc = s=>String(s).replace(/\\/g,'\\\\').replace(/;/g,'\\;').replace(/,/g,'\\,').replace(/\n/g,'\\n');
+  const fold = l=>{ let o=''; while(l.length>74){ o += l.slice(0,74)+'\r\n '; l = l.slice(74); } return o+l; };
+  document.querySelector('[data-gcal]').href = 'https://calendar.google.com/calendar/render?action=TEMPLATE&text=' + encodeURIComponent(CAL_TITLE) +
+    '&dates=' + z(start) + '/' + z(end) + '&details=' + encodeURIComponent(CAL_DETAILS) + '&location=' + encodeURIComponent(CAL_LOCATION);
+  document.querySelector('[data-ics]').addEventListener('click',()=>{
+    const iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform==='MacIntel' && navigator.maxTouchPoints>1);
+    if(iOS && ICS_URL){ location.href = ICS_URL; return; }
+    const body = ['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Tindon Health & Wealth//Webinar//EN','CALSCALE:GREGORIAN','METHOD:PUBLISH','BEGIN:VEVENT',
+      'UID:tindon-medicare-2027-' + z(start) + '@tindon.com','DTSTAMP:' + z(new Date()),'DTSTART:' + z(start),'DTEND:' + z(end),
+      'SUMMARY:' + esc(CAL_TITLE),'DESCRIPTION:' + esc(CAL_DETAILS),'LOCATION:' + esc(CAL_LOCATION),
+      'BEGIN:VALARM','TRIGGER:-PT30M','ACTION:DISPLAY','DESCRIPTION:' + esc(CAL_TITLE + ' starts in 30 minutes'),'END:VALARM',
+      'END:VEVENT','END:VCALENDAR'].map(fold).join('\r\n');
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(new Blob([body],{type:'text/calendar;charset=utf-8'}));
+    a.download = 'medicare-2027-webinar.ics'; document.body.appendChild(a); a.click(); a.remove();
+  });
+}
+</script>
+</body>
+</html>
