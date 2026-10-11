@@ -72,3 +72,10 @@ wanted the headline "more of a call out" blended with what we had. Shipped: "On 
 You could be paying more in 2027 / *without realizing it.*" Sub = his "find out what to check... before December 7"
 line (em dash → comma); second line = his "join local Medicare advisor Brianna Henward..." as a ruled aside.
 H1 down to 58px so the callout line fits one line at 1440 (it clipped the "?" at 64px). Page title uses his question.
+
+## v4 (2026-10-11): state call-out rejected
+Javier: *"This is the worst headline in the fucking world. Why are you calling out Maine or New Hampshire? Because we're doing more than [that]."*
+Tindon serves beyond the states on its website. Removed every state reference: H1 line 1 is now "Already on Medicare?",
+bio ends "families like yours", ME · NH fact → "Licensed / Health & life insurance", the Julee excerpt that said
+"Maine plans" swapped for her "thoughtful, expert advice on all things Medicare" line, and the state dropdown is gone
+from the form (name, email, phone only). The Wells, Maine office address stays (it's the real address).
