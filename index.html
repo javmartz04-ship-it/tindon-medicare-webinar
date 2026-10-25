@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="https://javmartz04-ship-it.github.io/tindon-medicare-webinar/assets/favicon.svg" type="image/svg+xml">
 <style>
 /* ===== tokens: Tindon Health & Wealth (logo + tindon.com CSS) ===== */
 :root{
@@ -184,6 +184,7 @@ h1,h2{font-variant-numeric:lining-nums;font-feature-settings:"lnum"}
   background:radial-gradient(120% 100% at 50% 0%,#20477E,#0B2950);border:2px solid #fff;box-shadow:0 16px 30px -12px rgba(0,0,0,.55);display:grid;place-items:center}
 .cam .ini{width:42%;aspect-ratio:1;border-radius:50%;background:rgba(255,255,255,.12);border:1.5px solid rgba(255,255,255,.35);display:grid;place-items:center;
   font-family:var(--serif);font-size:clamp(14px,1.8vw,24px);font-weight:600;color:#fff;letter-spacing:.02em;margin-top:-24%}
+.cam img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .cam span{position:absolute;left:7px;bottom:6px;background:rgba(6,20,40,.78);color:#fff;font-size:11px;font-weight:600;padding:3px 8px;border-radius:3px;white-space:nowrap}
 .win .tools{display:flex;align-items:center;justify-content:center;gap:10px;padding:11px}
 .win .tools i{width:36px;height:36px;border-radius:6px;background:rgba(255,255,255,.08);display:grid;place-items:center}
@@ -219,6 +220,28 @@ h1,h2{font-variant-numeric:lining-nums;font-feature-settings:"lnum"}
 .live i{width:6px;height:6px;border-radius:50%;background:var(--orange)}
 
 /* ===== host + reviews ===== */
+/* what you'll learn */
+.learn{background:var(--lit-paper)}
+.learn .grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:80px;align-items:start}
+.learn .team{margin-top:40px}
+.learn .out{margin-top:0}
+.learn .a-m{display:none}
+.team{position:relative;padding:8px;border-radius:12px;background:linear-gradient(180deg,#fff,rgba(255,255,255,.6));border:1px solid var(--line);box-shadow:0 40px 80px -40px rgba(11,41,80,.5)}
+.team img{display:block;width:100%;aspect-ratio:1150/770;object-fit:cover;border-radius:7px}
+.team figcaption{position:absolute;left:24px;bottom:24px;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:10px 16px;box-shadow:0 14px 30px -16px rgba(11,41,80,.4)}
+.team figcaption small{display:block;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--t3);font-weight:600}
+.team figcaption strong{font-family:var(--serif);font-size:19px;font-weight:600}
+.out{list-style:none;margin-top:34px;border-top:2px solid var(--navy)}
+.out li{display:grid;grid-template-columns:34px 1fr;gap:16px;padding:20px 0;border-bottom:1px solid var(--line)}
+.out i,.bonus i{width:28px;height:28px;border-radius:50%;background:var(--navy);display:grid;place-items:center;margin-top:2px}
+.out i svg,.bonus i svg{width:15px;height:15px;stroke:var(--orange);fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.out h3{font-family:var(--serif);font-size:22px;font-weight:600;line-height:1.25;text-wrap:pretty}
+.out p{font-size:16.5px;color:var(--t2);margin-top:6px;line-height:1.55}
+.bonus{display:grid;grid-template-columns:34px 1fr;gap:16px;align-items:start;margin-top:24px;padding:18px 20px 18px 16px;background:#fff;border:1px solid var(--line);border-left:3px solid var(--orange);border-radius:var(--r);font-size:16.5px;color:var(--t2);line-height:1.5}
+.bonus i{background:var(--orange)}
+.bonus i svg{stroke:var(--navy)}
+.bonus b{color:var(--ink);font-weight:600}
+.learn .act{margin-top:34px}
 .host{background:var(--lit-band);border-bottom:1px solid var(--line-2)}
 .host .grid{display:grid;grid-template-columns:420px 1fr;gap:88px;align-items:center}
 .ph{position:relative;padding:8px;border-radius:12px;background:linear-gradient(180deg,#fff,rgba(255,255,255,.6));border:1px solid var(--line);box-shadow:0 40px 80px -40px rgba(11,41,80,.5);transform:rotate(-1.2deg)}
@@ -227,6 +250,7 @@ h1,h2{font-variant-numeric:lining-nums;font-feature-settings:"lnum"}
 .ph .slot svg{width:52px;height:52px;stroke:var(--t4);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
 .ph .slot b{font-family:var(--serif);font-size:23px;color:var(--ink);font-weight:600}
 .ph .slot span{font-size:15px;max-width:240px;line-height:1.45}
+.ph .shot{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:7px;background:#fff}
 .ph .cap{position:absolute;left:24px;bottom:24px;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:10px 16px;box-shadow:0 14px 30px -16px rgba(11,41,80,.4)}
 .ph .cap small{display:block;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--t3);font-weight:600}
 .ph .cap strong{font-family:var(--serif);font-size:19px;font-weight:600}
@@ -328,7 +352,11 @@ form .btn{width:100%;justify-content:space-between;margin-top:6px}
   .stage{max-width:700px}
   .inside .grid,.faq .grid{grid-template-columns:minmax(0,1fr);gap:48px}
   .inside .head{position:static}
-  .host .grid{grid-template-columns:minmax(0,1fr);gap:56px}
+  .host .grid,.learn .grid{grid-template-columns:minmax(0,1fr);gap:56px}
+  .team{max-width:640px}
+  .learn .a-d{display:none}
+  .learn .a-m{display:block}
+  .learn .grid{gap:40px}
   .ph{max-width:400px}
   .revs{grid-template-columns:1fr 1fr}
   .revs>*:first-child{grid-column:1/-1;padding:28px 0;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:20px}
@@ -358,6 +386,9 @@ form .btn{width:100%;justify-content:space-between;margin-top:6px}
   .topic,.topic:nth-child(even){padding:28px 0;border-left:0}
   .topic h3{font-size:23px}
   .facts b{font-size:24px}
+  .out h3{font-size:20px}
+  .team figcaption{left:16px;bottom:16px;padding:8px 12px}
+  .team figcaption strong{font-size:16px}
   .ph{max-width:290px;margin-inline:auto}
   .ph .slot{gap:8px;padding:20px}
   .facts div{padding-right:10px}
@@ -482,7 +513,7 @@ form .btn{width:100%;justify-content:space-between;margin-top:6px}
                   </div>
                 </div>
               </div>
-              <div class="cam"><span class="ini">BH</span><span>Brianna Henward</span></div>
+              <div class="cam"><img src="https://javmartz04-ship-it.github.io/tindon-medicare-webinar/assets/brianna-cam.jpg" alt="" width="480" height="360"><span>Brianna Henward</span></div>
             </div>
             <div class="tools" aria-hidden="true">
               <i><svg viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg></i>
@@ -521,16 +552,44 @@ form .btn{width:100%;justify-content:space-between;margin-top:6px}
   </div>
 </section>
 
+<!-- ===== what you'll learn ===== -->
+<section class="sec learn">
+  <div class="wrap grid">
+    <div class="lh">
+      <span class="k rv">What you'll learn</span>
+      <h2 class="h2 rv d1">Leave knowing exactly where you stand for 2027.</h2>
+      <figure class="team rv">
+        <img src="https://javmartz04-ship-it.github.io/tindon-medicare-webinar/assets/team.jpg" alt="Brianna Henward and the Tindon Health &amp; Wealth team" width="1150" height="770" loading="lazy">
+        <figcaption><small>Local and independent</small><strong>Brianna and the Tindon team</strong></figcaption>
+      </figure>
+      <div class="act rv a-d">
+        <button class="btn" data-open>Reserve My Free Seat <span class="bi"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+        <p class="risk"><b>Free</b> &nbsp;&middot;&nbsp; About 20 minutes &nbsp;&middot;&nbsp; No obligation to change plans</p>
+      </div>
+    </div>
+    <div class="lb">
+      <ul class="out">
+        <li class="rv"><i aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i><div><h3>Whether your prescriptions are still covered</h3><p>Plans rewrite their drug lists every year. You'll know where to look in yours, and what your drugs could cost in 2027.</p></div></li>
+        <li class="rv d1"><i aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i><div><h3>Whether your doctors are still in network</h3><p>How to check before you're locked into another year with the wrong plan.</p></div></li>
+        <li class="rv d1"><i aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i><div><h3>What 2027 is projected to cost you</h3><p>The Part B premium, your deductibles and the yearly cap on drug costs, in plain numbers.</p></div></li>
+        <li class="rv d1"><i aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i><div><h3>Which path fits you best</h3><p>Original Medicare with a Supplement, or Medicare Advantage, and the questions that decide it.</p></div></li>
+        <li class="rv d1"><i aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i><div><h3>Exactly what to do before December 7</h3><p>A short checklist to hold your plan up against, then live Q&amp;A with Brianna.</p></div></li>
+      </ul>
+      <p class="bonus rv"><i aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i><span><b>After the webinar:</b> a free one-on-one plan review with Brianna's team, if you want one.</span></p>
+      <div class="act rv a-m">
+        <button class="btn" data-open>Reserve My Free Seat <span class="bi"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+        <p class="risk"><b>Free</b> &nbsp;&middot;&nbsp; About 20 minutes &nbsp;&middot;&nbsp; No obligation to change plans</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ===== host + reviews ===== -->
 <section class="sec host">
   <div class="wrap">
     <div class="grid">
       <div class="ph rv">
-        <div class="slot">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="15" rx="2"/><circle cx="12" cy="12.5" r="3.5"/><path d="M8 5l1.5-2h5L16 5"/></svg>
-          <b>Brianna's photo goes here</b>
-          <span>Portrait, 4:5.</span>
-        </div>
+        <img class="shot" src="https://javmartz04-ship-it.github.io/tindon-medicare-webinar/assets/brianna.jpg" alt="Brianna Henward, owner of Tindon Health &amp; Wealth" width="858" height="1072" loading="lazy">
         <div class="cap"><small>Your host</small><strong>Brianna Henward</strong></div>
       </div>
       <div class="bio">
