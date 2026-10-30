@@ -123,3 +123,8 @@ for the calendar." Live registration page referenced: go.tindon.us/registration-
 - Rework: v1 stacked headline over a person/calendar row, calendar top ~460px → moved calendar beside the headline.
   Emphasis line wrapped to 2 lines in a 470px column → 560px column, 56px H1, nowrap on desktop. Phone overflow came
   from the rail's nowrap time-zone label inside a `1fr` grid → `minmax(0,1fr)` and hide the label under 620px.
+- **Booked thank-you (2026-10-30):** `booked.src.html` → `booked.html`, built from the webinar thanks page's shell.
+  Seal + "You're all set, <first>. / *Brianna will see you soon.*", navy card (2027 Plan Review with Brianna, her
+  headshot, When = "in your confirmation email", 30 minutes, With), reschedule = the link in their email, "Before your
+  review" 3 items, office phone, disclosure. No CTA (conversion already happened). `?first_name=` personalises.
+  Set the GHL calendar's redirect to this page after booking.
