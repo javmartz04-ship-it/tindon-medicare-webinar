@@ -8,6 +8,7 @@ import os
 A='assets/' if os.environ.get('LOCAL') else 'https://javmartz04-ship-it.github.io/tindon-medicare-webinar/assets/'
 src=open('src.html').read().replace('{{A}}',A).replace('{{LOGO}}',paths).replace('{{STARS}}',star*5)
 open('index.html','w').write(src)
+open('book.html','w').write(open('book.src.html').read().replace('{{A}}',A).replace('{{LOGO}}',paths).replace('{{STARS}}',star*5))
 open('thanks.html','w').write(open('thanks.src.html').read().replace('{{A}}',A).replace('{{LOGO}}',paths))
 # favicon: shield mark only
 fav=re.sub(r'class="([now])"',lambda m:'fill="'+{'n':'#0B2950','o':'#FF914D','w':'#fff'}[m.group(1)]+'"',re.search(r'<svg[^>]*>(.*)</svg>',svg,re.S).group(1))
