@@ -91,3 +91,35 @@ and the card shows the date in ET, a countdown, Add To Calendar (.ics, verified:
 6 PM EDT, 30-min alarm) and Google Calendar. For iPhones, host an .ics and set `ICS_URL` once the date exists.
 Opt-in `THANKS` = 'thanks.html' and now appends `?first_name=` (first name only, never email/phone in the URL).
 Still preview-only until `WEBHOOK` is set. In GHL, swap THANKS for the GHL thank-you URL.
+
+## v5 (2026-10-25): webhook, GHL paste, real photos, what-you'll-learn
+- WEBHOOK = hooks/HGSTYFasQVLLo1YnAvEJ/webhook-trigger/577686d2-... (test record accepted). THANKS = https://go.tindon.us/registered.
+- Javier pastes `index.html` into GHL, so every asset now builds to an absolute GitHub Pages URL (`{{A}}` in src;
+  `LOCAL=1 python3 build.py` for relative paths during local review). Relative `assets/` paths break on the GHL domain.
+- Javier supplied Brianna's white-background headshot and a 7-person team photo (both ~1000px). Headshot → host
+  slot (4:5 crop) and the hero webinar cam tile (initials gone). Team photo → new section.
+- New light section between the navy "Inside the webinar" band and the host: "What you'll learn / Leave knowing
+  exactly where you stand for 2027." Five outcomes (drugs covered, doctors in network, 2027 costs, which path, what
+  to do before Dec 7) + the free one-on-one review as the bonus line + CTA. Outcomes, not topics, so it doesn't repeat
+  the agenda. First layout (photo centred beside a tall list) left dead space; fixed by stacking heading + photo + CTA
+  left, outcomes right. ~4,900px at 1440.
+
+## Booking page (2026-10-30): post-webinar 2027 plan review
+**Brief (Javier):** "make a booking page, this will be after a webinar to do the review or something, have a placeholder
+for the calendar." Live registration page referenced: go.tindon.us/registration-page (it is our index.html pasted in GHL).
+
+- Files: `book.src.html` → `book.html` (build.py now emits it too; same `{{A}}` absolute-asset rule for the GHL paste).
+  Preview: https://javmartz04-ship-it.github.io/tindon-medicare-webinar/book.html
+- Call = the "free one-on-one plan review" the webinar page already promises. H1 "Book Your 2027 / Plan Review /
+  *With Brianna Henward.*" (RIG booking formula). Sub = who she checks it against (plan, doctors, prescriptions);
+  no promise of what the call delivers, no length or format invented.
+- Layout: logo only, no nav, 0 links. Desktop = headline + Brianna card (headshot, 5.0 Google, 2007, licensed) left,
+  calendar shell right, top at 116px. Phone = headline → calendar (top 375px at 375x812) → Brianna card.
+- Below: "What to have ready" 3 steps (ANOC, prescriptions, doctors), the same 3 real Google review excerpts, disclosure footer.
+- Calendar: `CALENDAR_URL` in CONFIG (empty = labelled dashed placeholder). Javier sent the embed the same day:
+  https://link.tindon.com/widget/booking/tXCEEx1ZAbS9NTAn243M ("2027 Plan Review with Brianna", 30 min), loaded with
+  link.tindon.com/js/form_embed.js. GHL side: it opens on January 2027 with no slots that month and shows
+  America/Chicago; both are calendar settings in GHL.
+- Rework: v1 stacked headline over a person/calendar row, calendar top ~460px → moved calendar beside the headline.
+  Emphasis line wrapped to 2 lines in a 470px column → 560px column, 56px H1, nowrap on desktop. Phone overflow came
+  from the rail's nowrap time-zone label inside a `1fr` grid → `minmax(0,1fr)` and hide the label under 620px.
